@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Demo</class>
+ <widget class="QWidget" name="Demo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>596</width>
+    <height>353</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QLabel" name="title">
+     <property name="font">
+      <font>
+       <family>Fira Code</family>
+       <pointsize>20</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Dataset Process</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>文件路径(支持csv,excel)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="file_path_label"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="file_choice_btn">
+       <property name="text">
+        <string>选择文件</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>缺失值信息</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="missing_ratio_table"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,1">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>缺失值填充算法</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="imputation_combo_box"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,1,2">
+     <item>
+      <widget class="QCheckBox" name="outiler_check_box">
+       <property name="text">
+        <string>是否进行异常值剔除</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>目标列</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="target_comboBox"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>剔除大小(&lt;= 0.1)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="outlier_ratio"/>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="run_btn">
+     <property name="text">
+      <string>Run!</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
